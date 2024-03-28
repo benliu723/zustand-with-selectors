@@ -1,0 +1,38 @@
+{
+  "name": "zustand-with-selectors",
+  "type": "module",
+  "version": "1.0.0",
+  "keywords": [],
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/benliu723/zustand-with-selectors",
+    "type": "git"
+  },
+  "homepage": "https://github.com/benliu723/zustand-with-selectors",
+  "peerDependencies": {
+    "zustand": ">=4"
+  },
+  "scripts": {
+    "tsc": "yarn run clear && yarn run tsc:esm && yarn run tsc:cjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "NODE_ENV=test vitest --coverage",
+    "test_watch": "NODE_ENV=test vitest watch . --coverage"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.4.0",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
+  }
+}
