@@ -1,6 +1,6 @@
 # zustand-with-selectors
 
-Zustand recommends that manually apply render optimizations by using selectors, however, using selector by zustand is not makes me happy when you want to use multiple state variables, such like,
+Zustand recommends that manually apply render optimizations by using selectors, however, using selector by zustand is not quite smoothly when you want to use multiple state variables, such like,
 
 ```
 const bears = useStore((state) => state.bears)
