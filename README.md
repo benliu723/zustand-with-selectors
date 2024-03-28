@@ -1,6 +1,6 @@
 # zustand-with-selectors
 
-Zustand recommends that manually apply render optimizations by using selectors, however, using selector by zustand is not quite smoothly when you want to use multiple state variables, such like,
+Zustand recommends that manually apply render optimizations by using selectors, however, using selector by zustand is not quite smoothly when you want to use multiple state variables, .e.g,
 
 ```
 const bears = useStore((state) => state.bears)
@@ -13,7 +13,7 @@ const bears = useBearStore.use.bears()
 const increment = useBearStore.use.increment()
 ```
 
-`zustand-with-selectors` provides a way to easily use selectors. such like `const {bears, increase} = bearStore.use(['bears', 'increase'])`, so that you do not need to declare multiple variables by using `object spreads`.
+`zustand-with-selectors` provides a way to easily use selectors. .e.g, `const {bears, increase} = bearStore.use(['bears', 'increase'])`, so that you do not need to declare multiple variables by using `object spreads`.
 
 ## Install
 
