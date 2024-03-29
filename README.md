@@ -13,7 +13,7 @@ const bears = useBearStore.use.bears()
 const increment = useBearStore.use.increment()
 ```
 
-`zustand-with-selectors` provides a way to easily use selectors. .e.g, `const {bears, increase} = bearStore.use(['bears', 'increase'])`, so that you can use `object spreads` for avoiding declaring multiple variables.
+`zustand-with-selectors` provides a way to easily use selectors. .e.g, `const {bears, increase} = bearStore()`, so that you can use `object spreads` for avoiding declaring multiple variables, but only with spreaded properties selected.
 
 ## Install
 
@@ -44,7 +44,7 @@ const useBearStore = create<BearState>((set) => ({
 }))
 
 function BearCounter() {
-  const {bears, increase} = useStore.use(['bears', 'increase'])
+  const {bears, increase} = useStore()
   return (<div>
      <h1>{bears} around here...</h1>
      <button onClick={increase}>one up</button>

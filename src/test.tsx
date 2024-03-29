@@ -19,7 +19,7 @@ describe(() => {
         }));
       
           const Comp = () => {
-            const {bears, increase} = useStore.use(['bears', 'increase']);
+            const {bears, increase} = useStore();
             return (
               <>
                 <span data-testid="text">{bears}</span>
